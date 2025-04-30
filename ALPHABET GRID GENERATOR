@@ -1,0 +1,12 @@
+char = 97  
+rows = int(input("Enter number of rows: "))
+cols = int(input("Enter number of columns: "))
+
+for i in range(rows):
+    x = ""
+    for j in range(cols):
+        x += chr(char) 
+        char += 1 
+        if char > 122: 
+            char = 97
+    print(" ".join(x)) 
